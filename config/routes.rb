@@ -1,4 +1,12 @@
 LetsWrite::Application.routes.draw do
+  get "pages/about"
+
+  get "pages/programs"
+
+  get "pages/contact"
+
+  get "pages/gallery"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -24,6 +24,47 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%= yield %>
+
+    <nav class="top-bar">
+      <ul>
+        <li class="name"><h1><a href="#">LetsWrite.com</a></h1></li>
+        <li class="toggle-topbar"><a href="#"></a></li>
+      </ul>
+      <section>
+        <ul class="right">
+          <li><a href="#">Link</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </section>
+    </nav>
+
+<div class="container">
+  
+  <div class="row">
+    <div class="twelve columns">
+      <img src="http://placehold.it/3500x450">
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 30px">
+    <div class="three columns">
+      <ul class="nav-bar vertical">
+        <li><%= link_to "About Us", pages_about_path %></li>
+        <li><%= link_to "Programs", pages_programs_path %></li>
+        <li><%= link_to "Gallery", pages_gallery_path %></li>
+        <li><%= link_to "Contact Us", pages_contact_path %></li>
+      </ul>
+    </div>
+
+    <div class="nine columns">
+      <%= yield %>
+    </div>
+
+  </div>
+
+</div>
+
 </body>
 </html>
