@@ -1,2 +1,18 @@
-<h1>Pages#gallery</h1>
-<p>Find me in app/views/pages/gallery.html.erb</p>
+<script type="text/javascript">
+  $(window).load(function() { 
+    $("#featured").orbit();
+  });
+</script>
+
+<div class="row">
+  <div class="ten columns centered">
+    <div id="featured">
+      <%= image_tag("gallery/img01.jpg") %>   
+      <%= image_tag("gallery/img03.jpg") %> 
+      <%= image_tag("gallery/img04.jpg") %>
+      <%= image_tag("gallery/img06.jpg") %>
+      <%= image_tag("gallery/img08.jpg") %>
+      <%= image_tag("gallery/img10.jpg") %>
+    </div>
+  </div>
+</div>
