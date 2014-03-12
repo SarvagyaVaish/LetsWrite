@@ -22,8 +22,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 
   # Foundation Gems
+  gem 'compass'
   gem 'compass-rails'
-  gem 'zurb-foundation'
+  gem 'zurb-foundation', "= 3.2.5"
 end
 
 gem 'jquery-rails'
